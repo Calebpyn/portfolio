@@ -12,6 +12,8 @@ function Homepage() {
 
     const toggleClosed = context?.toggleClosed
 
+    // const isClosed = context?.isClosed
+
     const handleToggle = () => {
         if(toggleClosed){
             toggleClosed()
@@ -49,7 +51,9 @@ function Homepage() {
             </div>
 
             <div className="mt-5 flex justify-center">
-                <button className="py-2 px-5 border-white border-2 rounded-full text-white font-Roboto tracking-wider flex items-center" onClick={() => navigate('/portfolio')}>
+                <button className="py-2 px-5 border-white border-2 rounded-full text-white font-Roboto tracking-wider flex items-center" onClick={() => {
+                    navigate('/portfolio')
+                }}>
                 <span className='mr-4 font-medium'>Work</span>
                 <BsArrowRightSquare/>
                 </button>
@@ -57,7 +61,7 @@ function Homepage() {
         </div>
         
         <div>
-            <Burger/>
+            <Burger isBgW={false}/>
         </div>
     </div>
   )
