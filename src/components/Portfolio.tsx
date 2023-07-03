@@ -2,6 +2,8 @@ import { useContext } from "react"
 import Burger from "./Burger"
 import windowState from "../contexts/windowState"
 import AboutMe from "./AboutMe"
+import {AiOutlineCloudDownload} from 'react-icons/ai'
+import fileToDownload from '../../public/Resume_CalebPayan.pdf'
 
 function Portfolio() {
 
@@ -19,11 +21,15 @@ function Portfolio() {
         }
     }
 
+    const handleDownload = () => {
+      window.open(fileToDownload, '_blank')
+    }
+
 
   return (
     <div className="flex flex-col h-screen w-screen justify-between items-center relative overflow-x-hidden">
 
-      <div className="bg-[url('https://i.ibb.co/KDzbwHx/DSCF0811060722.jpg')] w-full px-32 py-20 md:p-32">
+      <div className="w-full px-32 py-20 md:p-32" style={{backgroundImage: `url('https://i.ibb.co/KDzbwHx/DSCF0811060722.jpg')`}}>
 
         <AboutMe/>
 
@@ -110,8 +116,17 @@ function Portfolio() {
 
       </div>
 
-      <div>
-        
+      <div className="p-9 w-full">
+
+        <div className="flex justify-start w-full">
+          <span className="font-black text-2xl">RESUME</span>
+        </div>
+
+        <div className="mt-5 w-full justify-around flex">
+          <button className="w-[80%] flex justify-around p-3 border-2 border-black rounded-full items-center px-6 font-semibold">Download <AiOutlineCloudDownload style={{fontSize: '25px'}} /></button>
+        </div>
+
+
       </div>
 
 
