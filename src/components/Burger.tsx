@@ -29,7 +29,7 @@ function Burger(props: burguerProps) {
     const navigate = useNavigate()
 
   return (
-    <div className={isClosed ? "absolute backdrop-blur-md h-screen w-1/2 translate-x-[100%] transitions top-0 md:w-1/5 md:translate-x-[250%]":"absolute bg-black/[.6] backdrop-blur-md h-screen w-1/2 transitions top-0 md:w-1/5 md:translate-x-[150%]"}>
+    <div className={isClosed ? "fixed backdrop-blur-md h-screen w-1/2 translate-x-[100%] transitions top-0 md:w-1/5 md:translate-x-[250%]":"fixed bg-black/[.6] backdrop-blur-md h-screen w-1/2 transitions top-0 md:w-1/5 md:translate-x-[150%]"}>
 
         <div className="h-3/5 flex flex-col justify-between font-extrabold p-10" style={fontColor}>
 
@@ -42,8 +42,11 @@ function Burger(props: burguerProps) {
             <button className='transitions hover:scale-110' onClick={() => {
                 navigate('/portfolio')
                 handleToggle()
-            }}>PORTFOLIO</button>
-            <button className='transitions hover:scale-110'>ABOUT</button>
+            }}>ABOUT</button>
+            <button className='transitions hover:scale-110' onClick={() => {
+                navigate('/portfolio')
+                handleToggle()
+            }}>WORK</button>
             <button className='transitions hover:scale-110'>RESUME</button>
             <button className='transitions hover:scale-110'>CONTACT</button>
             <button className='transitions hover:scale-110'>GITHUB</button>

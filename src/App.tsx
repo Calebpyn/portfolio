@@ -4,6 +4,8 @@ import {HashRouter, Routes, Route} from 'react-router-dom'
 import Portfolio from './components/Portfolio'
 import {useState} from 'react'
 import windowState from './contexts/windowState'
+import BgAbout from './components/BgAbout'
+import MainPage from './components/MainPage'
 
 function App() {
 
@@ -27,8 +29,10 @@ function App() {
       
         <HashRouter>
           <Routes>
+            <Route path='/main' element={<MainPage/>}/>
             <Route path='/' element={<Bg/>}/>
             <Route path='/portfolio' element={<Portfolio/>}/>
+            <Route path='/about' element={<BgAbout/>}/>
           </Routes>
         </HashRouter>
 
