@@ -123,7 +123,7 @@ function Portfolio() {
         </div>
 
         <div className="mt-5 w-full justify-around flex">
-          <button className="w-[80%] flex justify-around p-3 border-2 border-black rounded-full items-center px-6 font-semibold">Download <AiOutlineCloudDownload style={{fontSize: '25px'}} /></button>
+          <button className="w-4/5 flex justify-around p-3 border-2 border-black rounded-full items-center px-6 font-semibold" onClick={() => handleDownload()}>Download <AiOutlineCloudDownload style={{fontSize: '25px'}} /></button>
         </div>
 
 
