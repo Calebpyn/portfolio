@@ -129,19 +129,30 @@ function Portfolio() {
 
       </div>
 
-      <div className="p-9 w-full">
+      <div className="w-full">
 
-        <div className="flex justify-start w-full">
+        <div className="flex justify-start w-full p-9 pb-7">
           <span className="font-black text-2xl">CONTACT</span>
         </div>
 
-        <div className="w-full flex justify-between mt-5">
-          <div className="w-3/4 flex h-[50vh] rounded-md">
-            <div className="bg-[url('https://i.ibb.co/85HWxbx/IMG-2226.jpg')] bg-center bg-cover w-1/2"></div>
+        <div className="w-full flex justify-around">
+
+          <div className="w-3/4 flex h-[50vh] rounded-md shadow-2xl">
+
+            <div className="bg-[url('https://i.ibb.co/85HWxbx/IMG-2226.jpg')] bg-center bg-cover w-1/2 rounded-l-md"></div>
+
             <form className="w-1/2 h-full">
 
+              <input placeholder="Name"/>
+              <input placeholder="Email"/>
+              <input placeholder="Company"/>
+              <input placeholder="Message"/>
+              <input />
+
             </form>
+
           </div>
+
         </div>
 
 
