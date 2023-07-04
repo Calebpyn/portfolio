@@ -5,7 +5,7 @@ function AboutMe() {
 
         <div className="flex flex-col items-center">
             <div className="flex flex-col text-left mb-10">
-                <span className="font-black text-white text-6xl">About Me</span>
+                <span className="font-black text-center text-white text-6xl">About Me</span>
                 {/* <span className="font-bold text-white text-2xl">Hey, I'm Caleb</span> */}
             </div>
 

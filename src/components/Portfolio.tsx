@@ -39,7 +39,7 @@ function Portfolio() {
 
         <div className="font-black text-2xl">SOME OF MY WORK</div>
 
-        <div className="fixed right-10 top-10">
+        <div className="fixed right-4 top-4">
           <div className='w-7 flex flex-col h-5 justify-between hover:cursor-pointer' onClick={() => handleToggle()}>
               <div className='bg-black h-[2px] w-full'></div>
               <div className='bg-black h-[2px] w-full'></div>
@@ -123,7 +123,25 @@ function Portfolio() {
         </div>
 
         <div className="mt-5 w-full justify-around flex">
-          <button className="w-4/5 flex justify-around p-3 border-2 border-black rounded-full items-center px-6 font-semibold" onClick={() => handleDownload()}>Download <AiOutlineCloudDownload style={{fontSize: '25px'}} /></button>
+          <button className="w-4/5 flex justify-around p-3 border-2 border-black rounded-full items-center px-6 font-semibold md:w-1/5" onClick={() => handleDownload()}>Download <AiOutlineCloudDownload style={{fontSize: '25px'}} /></button>
+        </div>
+
+
+      </div>
+
+      <div className="p-9 w-full">
+
+        <div className="flex justify-start w-full">
+          <span className="font-black text-2xl">CONTACT</span>
+        </div>
+
+        <div className="w-full flex justify-between mt-5">
+          <div className="w-3/4 flex h-[50vh] rounded-md">
+            <div className="bg-[url('https://i.ibb.co/85HWxbx/IMG-2226.jpg')] bg-center bg-cover w-1/2"></div>
+            <form className="w-1/2 h-full">
+
+            </form>
+          </div>
         </div>
 
 
