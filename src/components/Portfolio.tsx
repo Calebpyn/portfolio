@@ -141,13 +141,13 @@ function Portfolio() {
 
             <div className="bg-[url('https://i.ibb.co/85HWxbx/IMG-2226.jpg')] bg-center bg-cover w-1/2 rounded-l-md"></div>
 
-            <form className="w-1/2 h-full">
+            <form className="w-1/2 h-full flex flex-col justify-around items-left p-5">
 
-              <input placeholder="Name"/>
-              <input placeholder="Email"/>
-              <input placeholder="Company"/>
-              <input placeholder="Message"/>
-              <input />
+              <input placeholder="Name" className="border-b-2 outline-none focus:border-black transitions md:w-1/2"/>
+              <input placeholder="Email" className="border-b-2 outline-none focus:border-black transitions md:w-1/2"/>
+              <input placeholder="Company" className="border-b-2 outline-none focus:border-black transitions md:w-1/2"/>
+              <input placeholder="Message" className="border-b-2 outline-none focus:border-black transitions md:w-1/2"/>
+              <input type="submit" className="border-2 border-black rounded-full font-light"/>
 
             </form>
 
@@ -155,6 +155,12 @@ function Portfolio() {
 
         </div>
 
+
+      </div>
+
+      <div className="mt-14 bg-gray-200 p-9 w-full text-gray-700 font-light text-sm flex justify-start">
+
+        <span>Caleb Payán Portfolio</span>
 
       </div>
 
